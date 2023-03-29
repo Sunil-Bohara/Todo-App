@@ -7,6 +7,7 @@
 
 
 body {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -61,7 +62,7 @@ body {
 }
 .form-label input {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 7px;
     border: none;
     border-radius: 4px;
@@ -87,6 +88,7 @@ body {
     color: white;
 }
 
+
 #main {
     min-height: 100vh;
     background-image: url("Images/main-background-image.jpg");
@@ -94,6 +96,7 @@ body {
     background-size: cover;
     background-position: top;
 }
+
 
 .main-header-container {
     width: 65vw;
@@ -116,13 +119,24 @@ body {
     padding-left: 10px;
 }
 
+
+.todo-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .todo-section {
+    width: 90vw;
+    height: 85vh;
+    background-color: #2222221c;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 50px;
 }
+
 .todo-form,
 .todo-list {
     width: 50vw;
@@ -131,6 +145,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #444;
+}
+.todo-form {
+    border: 1px solid black;
+}
+.todo-list {
+    display: none;
 }
 
 .todo-form input,
@@ -139,11 +160,13 @@ body {
     border: none;
     outline: none;
     font-size: 1.2rem;
-    color: white;
+    color: black;
     height: 3rem;
     padding: 6px 12px;
     background-color: #ccc;
 }
+
+
 ::placeholder {
     color: #444;
     opacity: 0.5;
@@ -156,22 +179,25 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+
 .btn {
     padding-inline-end: 5px;
 }
 
 .btn button {
-    background-color: #444;
-    color: #fff;
+    background-color: #333;
+    color: #ddd;
     height: 90%;
     border: none;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bolder;
     padding: 6px 10px;
     margin-left: 5px;
     cursor: pointer;
 }
+
 .btn button:hover {
     opacity: 0.9;
 }
