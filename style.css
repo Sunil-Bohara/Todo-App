@@ -14,7 +14,7 @@ body {
 .header-container{
     color: white;
     min-height: 100vh;
-    background-image: url('Images/background-image.jpg');
+    background-image: url('Images/header-bg-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -89,5 +89,89 @@ body {
 
 #main {
     min-height: 100vh;
-    background-color: cadetblue;
+    background-image: url("Images/main-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.main-header-container {
+    width: 65vw;
+    background: linear-gradient(to right,#44444421, #1111114e);
+    border-radius: 0px 0px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline-start: 521px;
+    padding: 8px 40px;
+}
+.main-headline h2 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+.user-name h2 {
+    font-size: 1.2rem;
+    color: #111;
+    border-left: 2px solid red;
+    padding-left: 10px;
+}
+
+.todo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.todo-form,
+.todo-list {
+    width: 50vw;
+    background-color: #ccc;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-form input,
+.todo-list input {
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+    height: 3rem;
+    padding: 6px 12px;
+    background-color: #ccc;
+}
+::placeholder {
+    color: #444;
+    opacity: 0.5;
+}
+
+.todo-section-form,
+.todo-list-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    padding-inline-end: 5px;
+}
+
+.btn button {
+    background-color: #444;
+    color: #fff;
+    height: 90%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding: 6px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.btn button:hover {
+    opacity: 0.9;
 }
