@@ -137,8 +137,7 @@ body {
     margin-top: 50px;
 }
 
-.todo-form,
-.todo-list {
+.todo-form {
     width: 50vw;
     background-color: #ccc;
     margin-top: 50px;
@@ -146,12 +145,17 @@ body {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #444;
-}
-.todo-form {
     border: 1px solid black;
 }
+
+
 .todo-list {
-    display: none;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .todo-form input,
@@ -161,8 +165,7 @@ body {
     outline: none;
     font-size: 1.2rem;
     color: black;
-    height: 3rem;
-    padding: 6px 12px;
+    height: 2rem;
     background-color: #ccc;
 }
 
@@ -175,9 +178,16 @@ body {
 .todo-section-form,
 .todo-list-form {
     width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.todo-list-form {
+    width: 100%;
+    background-color: #66666648;
+    margin-top: 10px;
 }
 
 
